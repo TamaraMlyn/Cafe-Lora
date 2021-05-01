@@ -54,12 +54,12 @@ orderBtnElm.addEventListener('click', shortOrder);
 
 const layerElm = document.querySelector('.drink__info');
 
-const coffeeOffer = [
+const layers = [
   { color: '#feeeca', label: 'mléčná pěna' },
   { color: '#fed7b0', label: 'teplé mléko' },
   { color: '#613916', label: 'espresso' },
 ];
 
-coffeeOffer.forEach((item) => {
+layers.forEach((item) => {
   layerElm.innerHTML += Layer(item);
 });
