@@ -148,48 +148,6 @@ nav a:hover {
   margin-bottom: 4rem;
 }
 
-.drink {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0.5rem;
-  width: 100%;
-}
-
-.drink__product {
-  display: flex;
-}
-
-.drink__cup {
-  width: 9rem;
-  height: 9rem;
-}
-
-.drink__cup img {
-  width: 9rem;
-  height: 9rem;
-}
-
-.drink__cup--selected {
-  background-image: url('./img/cup-selected.png');
-  background-size: contain;
-}
-
-.drink__cup--selected img {
-  display: none;
-}
-
-.drink__info {
-  margin-left: 1rem;
-}
-
-.drink__controls {
-  margin-top: 1rem;
-
-  text-align: center;
-}
-
 .order-btn {
   padding: 0.5rem 1rem;
 
