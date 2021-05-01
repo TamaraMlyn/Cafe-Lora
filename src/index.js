@@ -22,18 +22,29 @@ for (let i = 0; i < navAllElm.length; i++) {
 // 4 - objednávání nápoje
 
 const orderBtnElm = document.querySelector('.order-btn');
+const drinkCupElm = document.querySelector('.drink__cup');
 let ordered = false;
 
-const order = () => {
+// const order = () => {
+//   if (ordered === false) {
+//     drinkCupElm.classList.add('drink__cup--selected');
+//     orderBtnElm.textContent = 'Zrušit';
+//     ordered = true;
+//   } else {
+//     drinkCupElm.classList.remove('drink__cup--selected');
+//     orderBtnElm.textContent = 'Objednat';
+//     ordered = false;
+//   }
+// };
+
+const shortOrder = () => {
+  drinkCupElm.classList.toggle('drink__cup--selected');
   if (ordered === false) {
-    orderBtnElm.classList.add('drink__cup', 'drink__cup--selected');
     orderBtnElm.textContent = 'Zrušit';
-    ordered = true;
   } else {
-    orderBtnElm.classList.remove('drink__cup', 'drink__cup--selected');
     orderBtnElm.textContent = 'Objednat';
-    ordered = false;
   }
+  ordered = !ordered;
 };
 
-orderBtnElm.addEventListener('click', order);
+orderBtnElm.addEventListener('click', shortOrder);
