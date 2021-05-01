@@ -309,4 +309,8 @@ nav a:hover {
   .drink {
     width: 33.333%;
   }
+
+  .nav-btn {
+    display: none;
+  }
 }
