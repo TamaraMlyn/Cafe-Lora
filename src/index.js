@@ -1,5 +1,4 @@
 import './style.css';
-import { Layer } from './Layer/index';
 import { Drink } from './Drinks/index';
 
 console.log('funguju!');
@@ -34,22 +33,6 @@ const layers = [
 // layers.forEach((item) => {
 //   layerElm.innerHTML += Layer(item);
 // });
-
-const drink1 = {
-  id: 'romano',
-  name: 'Romano',
-  ordered: false,
-  layers: [
-    {
-      color: '#fbdf5b',
-      label: 'citrón',
-    },
-    {
-      color: '#613916',
-      label: 'espresso',
-    },
-  ],
-};
 
 // const drinkListElm = document.querySelector('.drinks-list');
 // drinkListElm.appendChild(Drink(drink1));
