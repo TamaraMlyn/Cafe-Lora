@@ -246,6 +246,20 @@ nav a:hover {
   background-attachment: fixed;
 }
 
+.gallery-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-intro {
+  width: 500px;
+  background-color: rgba(68, 68, 68, 0.5);
+
+  line-height: 1.5rem;
+  margin: 300px;
+  padding: 30px;
+}
+
 .contacts {
   margin-bottom: 4rem;
 
