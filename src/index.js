@@ -48,3 +48,29 @@ const shortOrder = () => {
 };
 
 orderBtnElm.addEventListener('click', shortOrder);
+
+// 5 - ingredience jako komponenty
+
+const layerElm = document.querySelector('.drink__info');
+
+const Layer = ({ color, label }) => {
+  return `<div class="layer">
+          <div class="layer__color" style="background-color: ${color}"></div>
+          <div class="layer__label">${label}</div>
+          </div>
+          `;
+};
+
+const coffeeOffer = [
+  { color: '#feeeca', label: 'mléčná pěna' },
+  { color: '#fed7b0', label: 'teplé mléko' },
+  { color: '#613916', label: 'espresso' },
+];
+
+// for (let i = 0; i < coffeeOffer.length; i++) {
+//   layerElm.innerHTML += Layer(coffeeOffer[i]);
+// }
+
+coffeeOffer.forEach((item) => {
+  layerElm.innerHTML += Layer(item);
+});
