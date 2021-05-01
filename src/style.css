@@ -244,11 +244,10 @@ nav a:hover {
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
-}
 
-.gallery-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .gallery-intro {
@@ -256,7 +255,6 @@ nav a:hover {
   background-color: rgba(68, 68, 68, 0.5);
 
   line-height: 1.5rem;
-  margin: 300px;
   padding: 30px;
 }
 
